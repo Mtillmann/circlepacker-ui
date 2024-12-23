@@ -26,7 +26,7 @@ export default function () {
               value={circlePackerOptions.numCircles} onInput={(e) => setCirclePackerOptions('numCircles', parseInt(e.target.value))} type='range'
               class='d-flex me-2 form-range'
             />
-            <input class='form-control w-50' id='numberOfCircles' type='number' value={circlePackerOptions.numCircles} onInput={(e) => setCirclePackerOptions('numCircles', parseInt(e.target.value))} />
+            <input class='form-control w-33' id='numberOfCircles' type='number' value={circlePackerOptions.numCircles} onInput={(e) => setCirclePackerOptions('numCircles', parseInt(e.target.value))} />
           </div>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function () {
               value={circlePackerOptions.spacing} onInput={(e) => setCirclePackerOptions('spacing', parseFloat(e.target.value))} type='range'
               class='d-flex me-2 form-range' id='spacing'
             />
-            <input class='form-control w-25' type='number' value={circlePackerOptions.spacing} onInput={(e) => setCirclePackerOptions('spacing', parseInt(e.target.value))} />
+            <input class='form-control w-33' type='number' value={circlePackerOptions.spacing} onInput={(e) => setCirclePackerOptions('spacing', parseInt(e.target.value))} />
           </div>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function () {
               class='d-flex me-2 form-range' id='minRadius'
             />
 
-            <input class='form-control w-25' type='number' value={circlePackerOptions.minRadius} onInput={(e) => setCirclePackerOptions('minRadius', parseInt(e.target.value))} />
+            <input class='form-control w-33' type='number' value={circlePackerOptions.minRadius} onInput={(e) => setCirclePackerOptions('minRadius', parseInt(e.target.value))} />
           </div>
 
         </div>
@@ -86,7 +86,7 @@ export default function () {
               class='d-flex me-2 form-range' id='maxRadius'
             />
 
-            <input class='form-control w-25' type='number' value={circlePackerOptions.maxRadius} onInput={(e) => setCirclePackerOptions('maxRadius', parseInt(e.target.value))} />
+            <input class='form-control w-33' type='number' value={circlePackerOptions.maxRadius} onInput={(e) => setCirclePackerOptions('maxRadius', parseInt(e.target.value))} />
           </div>
 
         </div>
@@ -132,7 +132,7 @@ export default function () {
               value={circlePackerOptions.minAlpha} onInput={(e) => setCirclePackerOptions('minAlpha', parseFloat(e.target.value))} type='range'
               class='d-flex me-2 form-range' id='minAlpha'
             />
-            <input class='form-control w-25' type='number' value={circlePackerOptions.minAlpha} onInput={(e) => setCirclePackerOptions('minAlpha', parseInt(e.target.value))} />
+            <input class='form-control w-33' type='number' value={circlePackerOptions.minAlpha} onInput={(e) => setCirclePackerOptions('minAlpha', parseInt(e.target.value))} />
           </div>
         </div>
       </div>

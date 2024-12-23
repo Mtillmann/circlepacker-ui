@@ -1,6 +1,6 @@
 import { createStore } from 'solid-js/store'
 import { state } from './store'
-import { For } from 'solid-js'
+import { For, Show } from 'solid-js'
 
 const [options, setOptions] = createStore(state.circlePackerOptions)
 
@@ -40,6 +40,9 @@ export default function () {
             </div>
           )}
         </For>
+        <Show when={options.colors.length === 0}>
+          <button class='btn btn-outline-secondary p-1 py-0 me-2 mb-2' disabled>using `auto` colors</button>
+        </Show>
       </div>
     </>
   )

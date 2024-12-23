@@ -76,13 +76,13 @@ function App () {
   return (
     <>
       <div class='container'>
-        <div class='row'>
-          <div class='col-12'>
+        <div class='row mt-2 mt-lg-0'>
+          <div class='col-12 d-none d-lg-block'>
             <h1 class='display-5'>CirclePacker UI</h1>
           </div>
-          <div class='col-8'>
+          <div class='col-12 col-lg-8' id='canvas'>
             <div class='h-100 rounded bg-checkerboard d-flex justify-content-center align-items-center'>
-              {image() && <img src={image()} class='img-fluid' />}
+              {image() && <img src={image()} class='img-fluid mh-100' />}
               <Show when={!image()}>
                 <div class='alert alert-info' role='alert'>Drop or paste an image here &mdash; or
                   <label for='file' class='ms-1 accordiontext-decoration-underline'>click here select an image from your device
@@ -92,8 +92,10 @@ function App () {
             </div>
             <input type='file' class='d-none' id='file' />
           </div>
-          <div class='col-4 border border-1 border-1 py-2 rounded small'>
-            <Options />
+          <div class='col-12 col-lg-4'>
+            <div class='border border-1 border-1 py-2 rounded small mt-2 mt-lg-0 p-2'>
+              <Options />
+            </div>
           </div>
         </div>
 
