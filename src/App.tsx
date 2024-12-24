@@ -80,7 +80,7 @@ function App () {
           <div class='col-12 d-none d-lg-block'>
             <h1 class='display-5'>CirclePacker UI</h1>
           </div>
-          <div class='col-12 col-lg-8' id='canvas'>
+          <div class='col-12 col-lg-7' id='canvas'>
             <div class='h-100 rounded bg-checkerboard d-flex justify-content-center align-items-center'>
               {image() && <img src={image()} class='img-fluid mh-100' />}
               <Show when={!image()}>
@@ -92,7 +92,7 @@ function App () {
             </div>
             <input type='file' class='d-none' id='file' />
           </div>
-          <div class='col-12 col-lg-4'>
+          <div class='col-12 col-lg-5'>
             <div class='border border-1 border-1 py-2 rounded small mt-2 mt-lg-0 p-2'>
               <Options />
             </div>
